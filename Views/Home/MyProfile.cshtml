@@ -1,0 +1,43 @@
+<div class="text-center row">
+    <div class="col-sm-8"></div>
+    <div class="col-sm-3">
+        <a href="/allusers" class="btn btn-primary col-sm-4">All Users</a>
+        <a href="/logout" class="btn btn-danger col-sm-3">logout</a>
+    </div>
+</div>
+<h2>Hi @ViewBag.iLoguari.Name!</h2>
+<p>Here is your profile description:</p>
+<p>@ViewBag.iLoguari.About</p><br>
+<p>Your proffesional network:</p>
+<ul>
+    @foreach (var mik in @ViewBag.Miqte)
+    {
+        <li><a href="/Profile/@mik.UserId">@mik.Name</a></li>
+    }
+</ul>
+<br>
+<h4>Invitations:</h4>
+<div class="col-sm-6">
+        <p>The following people asked yu to be their network:</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var request in ViewBag.requests)
+                {
+                    <tr>
+                        <td><a href="/Profile/@request.SenderId" class=" btn btn-primary">@request.Sender.Name </a>
+                        <td><a href="/AcceptR/@request.RequestId" class=" btn btn-primary">Accept </a>
+                            <a href="/DeclineR/@request.RequestId" class="btn btn-danger"> Decline </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center row">
+    <div class="col-sm-3"></div>
+    <h1 class="display-5 col-sm-5">Welcome @ViewBag.iLoguari.Name</h1>
+    <div class="col-sm-4">
+        <a href="/MyProfile/@ViewBag.iLoguari.UserId" class="btn btn-primary col-sm-4">My Profile</a>
+        <a href="/logout" class="btn btn-danger col-sm-3">logout</a>
+        <a href="/allusers" class="btn btn-primary col-sm-4">All Users</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-11"></div>
+
+<div class="row">
+    <div class="col-sm-3">
+        <table class="table">
+            <h3>Shto miq</h3>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var perdorues in ViewBag.perdoruesit)
+                {
+                    <tr>
+                        <td><a href="/Profile/@perdorues.UserId">@perdorues.Name</a></td>
+                        <td><a href="/SendR/@perdorues.UserId">Send Request</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

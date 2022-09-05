@@ -1,0 +1,6 @@
+<ul>
+    @foreach (var user in @ViewBag.AllUsers)
+    {
+        <li><a href="/Profile/@user.UserId">@user.Name</a></li>
+    }
+</ul>
