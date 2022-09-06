@@ -16298,6 +16298,11 @@
   "RootNamespace": "TestFinal",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\User\\Downloads\\Examm\\Views\\Home\\Movie.cshtml",
+      "TargetPath": "Views\\Home\\Movie.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\User\\Downloads\\Examm\\Views\\Home\\AllUsers.cshtml",
       "TargetPath": "Views\\Home\\AllUsers.cshtml",
       "FileKind": "mvc"
@@ -16320,6 +16325,11 @@
     {
       "FilePath": "c:\\Users\\User\\Downloads\\Examm\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Downloads\\Examm\\Views\\Home\\FansAdd.Cshtml",
+      "TargetPath": "Views\\Home\\FansAdd.Cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16348,8 +16358,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\User\\Downloads\\Examm\\Views\\Home\\MovieAdd.cshtml",
+      "TargetPath": "Views\\Home\\MovieAdd.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\User\\Downloads\\Examm\\Views\\Home\\LoginPartial.cshtml",
       "TargetPath": "Views\\Home\\LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\User\\Downloads\\Examm\\Views\\Home\\MovieEdit.cshtml",
+      "TargetPath": "Views\\Home\\MovieEdit.cshtml",
       "FileKind": "mvc"
     },
     {

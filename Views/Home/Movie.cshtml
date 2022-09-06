@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <h2>@ViewBag.Movie.Tittle</h2>
+        
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+    <h6>Who like it:</h6>      
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+    @foreach (var item in @ViewBag.Movie.Fansat)
+    {
+       <p>@item.UseriQePelqen.FirstName @item.UseriQePelqen.LastName ne nivelin : @item.Type</p> 
+    }     
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+    
+    <a href="/Movie/Edit/@ViewBag.Movie.MovieId" class="btn btn-primary col-sm-3">Edit</a>
+    </div>
+</div>
