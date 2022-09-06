@@ -11,8 +11,8 @@ using TestFinal.Models;
 namespace TestFinal.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20220905160208_refactor")]
-    partial class refactor
+    [Migration("20220906105404_MigrationName")]
+    partial class MigrationName
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
